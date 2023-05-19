@@ -1,3 +1,12 @@
 *{
     border: 0.1rem dotted gray;
 }
+
+.auto_width{
+    width: 100%;
+    height: 30%;
+}
+
+.col-3{
+wirth: 200
+}

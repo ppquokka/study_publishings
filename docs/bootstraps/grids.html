@@ -11,6 +11,49 @@
 </head>
 
 <body>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!--12개의 grid로 되어있다.width에 변화가 있어도 변화에 따라 유지된다-->
+            <div class="col-6 bg-primary text-white row">
+                <div class="col bg-dark">bg-dark</div>
+                <div class="col bg-success">bg-success</div>
+            </div>
+            <div class="col-3 bg-dark text-white">custum%</div>
+            <div class="col-3 bg-primary text-white">
+            <!--grid에 img넣기. %를 넣으면 화면 크기에 맞게 변동됨(class="auto_width")-->
+            <!--상위 href="../css/commons.css" 폴더를 열어서 css 작성-->   
+            <img class="auto_width" src="../images/paris.jpg" alt="">    
+            </div>
+            <div class="col-3 bg-dark text-white">custum%</div>
+        </div>
+
+        <!-- Control the column width, and how they should appear on different devices -->
+        <div class="row">
+            <div class="col-sm-6 bg-primary text-white">50%</div>
+            <div class="col-sm-6 bg-dark text-white">50%</div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="col-sm-4 bg-primary text-white">33.33%</div>
+            <div class="col-sm-4 bg-dark text-white">33.33%</div>
+            <div class="col-sm-4 bg-primary text-white">33.33%</div>
+        </div>
+        <br>
+
+        <!-- Or let Bootstrap automatically handle the layout -->
+        <div class="row">
+            <div class="col-sm bg-primary text-white">custum%</div>
+            <div class="col-sm bg-dark text-white">custum%</div>
+            <div class="col-sm bg-primary text-white">custum%</div>
+            <div class="col-sm bg-dark text-white">custum%</div>
+        </div>
+        <br>
+    </div>
+
+    <hr>
+
     <div class="container text-center">
         <!--자동으로 cross browsing 기능함-->
         <div class="row">
