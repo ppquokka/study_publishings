@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Modals</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/commons.css">
+</head>
+<!-- 'modals'는 'pop up'창을 대체 할 수 있는 화면. 공지사항, warning화면, 화면 변화 없이 회원가입 등
+      현재 화면에서 부수적으로 뭔가를 해야될 때(알림, 동작 등) 활용하는 화면 -->
+<!-- 카드와는 달리 내가적어서 사용함. 자바스크립트가 들어있어 해당 부분을 행동시킴 -->
+
+<body>
+     <!-- 오류잡아야함  -->
+    <div class="container">
+        <div class="fs-3">Center</div>
+        <a data-bs-toggle="modal" href="#modalTarget-center" class="btn btn-primary">Modal center</a>
+        <div class="modal" id="modalTarget-center">
+            <div class="modal-dialog modal-dialog-centerd">
+                <div class="modal-content">
+                    <div class="modal-header">헤더</div>
+                    <div class="modal-body">Center 입력 부분</div>
+                    <div class="modal-footer">
+                        <botton class="btn btn-secondary" data-bs-dismiss="modal">Close</botton>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 오류잡아야함  -->
+    <div class="container">
+        <div class="fs-3">Scroll</div>
+        <a data-bs-toggle="modal" href="#modalTarget-scroll" class="btn btn-primary">Modal Scroll Button</a>
+        <div class="modal" id="modalTarget-scroll">
+            <div class="modal-dialog modal-dialog-scrollable"></div>
+            <div class="modal-content">
+                <div class="modal-header">헤더</div>
+                <div class="modal-body">
+                    스크롤 부분
+                    소규모주택 관리비 투명화 단계적 시행
+                    10만원 넘으면 부과내역 세분화 표시 등
+
+                    서울 시내의 한 부동산 중개업소에 붙은 매물 소개 게시판. 경향DB
+
+
+                    직장인 A씨(37)는 출퇴근 문제로 지난 4월 경기도에서 서울 서초구의 한 다가구 주택으로 이사했다. A씨가 계약한 집은 보증금 1억원에 월세 35만원으로 주변 시세 대비 상당히
+                    저렴한 수준이다.
+
+                    A씨는 그러나 “월세만 놓고 보면 강남에서 이 정도 집을 구하기 쉽지 않지만 관리비까지 포함하면 사실상 월세 60만원짜리 집에 살고 있는 것”이라고 말했다.
+
+                    집은 1980년대에 지어진 4층짜리 다가구주택으로, A씨는 1층 1.5룸에 거주하고 있다. 그가 매달 납부하는 관리비는 25만원이다. 수도세·전기세·TV요금 등은 전부 별도다.
+
+                    A씨는 “관리비가 어떻게 쓰이는지는 전혀 모른다”면서 “출퇴근 전쟁 스트레스를 덜어낸 값이라고 생각하고 있다”고 말했다.
+
+                    국토교통부는 오는 6월부터 소규모주택 관리비 투명화 방안을 단계적으로 시행한다고 22일 밝혔다. 원룸, 오피스텔 등의 임대인이 과도한 관리비를 부과하는 관행을 막고, 임차인의
+                    알권리를 보장하겠다는 취지다.
+
+                    현재 50세대 미만의 공동주택, 다가구(원룸), 오피스텔(준주택) 등은 관리비에 대한 별도 규정이 없다. 떄문에 임차인이 매물을 구하거나 계약할 때 관리비가 얼마나 부과될지, 해당
+                    관리비가 부과되는 세부항목 등에 대한 정보를 얻을 수 없었다.
+
+                    직방·다방 등 온라인중개플랫폼에 게시된 매물의 경우 관리비 부과여부 및 액수를 확인할 수 있지만 각 관리비가 어디에 쓰이는지에 대한 세부항목은 나오지 않는다.
+
+                    국토부는 앞으로 전·월세 매물 광고시 월별로 일정 금액이 부과되는 ‘정액관리비’가 10만원 이상일 경우, 부과내역을 세분화해 표시하도록 하고, 온라인 중개플랫폼에도 표준화된
+                    입력기능을 마련해 임차인이 해당 매물의 관리비 부과내역 등 정보를 명확히 확인할 수 있도록 한다는 계획이다.
+
+                    공인중개사 역시 임대차계약 전 임차인에게 관리비 정보를 명확히 안내하도록 한다는 방침이다. 임대차계약서에도 비목별 관리비 내역을 작성하도록 개서내 매물광고부터 계약까지 전 과정에
+                    관리비 내역이 투명하게 공개되도록 한다.
+
+                    원희룡 국토부 장관은 “이번 대책으로 관리비가 ‘제2의 월세’로 악용되는 구조를 차단하고, 임대인이 부당하게 관리비를 올리는 관행을 끊어내 임대차 시장이 더욱 투명해질 것으로
+                    기대한다”고 밝혔다.
+                </div>
+                <div class="modal-footer">
+                    <botton class="btn btn-secondary" data-bs-dismiss="modal">Close</botton>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- 연동이 된다=유니크한 값=ID 필요 / 동작한다 -->
+    <div class="container">
+        <div class="fs-3">Basic</div>
+        <!-- href로 ID 연결함. 연결을 주었기에 연동됨(active와 같다). 버튼 작동은 togle로 연결함 -->
+        <a data-bs-toggle="modal" href="#modalTarget-first" class="btn btn-primary">Modal Button</a>
+        <!-- 키워드 div.modal#이름  -->
+        <div class="modal" id="modalTarget-first">
+            <div class="modal-dialog"></div>
+            <!-- 키워드 div.modal-conctent#이름 -->
+            <div class="modal-content">
+                <div class="modal-header">헤더</div>
+                <div class="modal-body">실제 내용 입력 부분</div>
+                <!-- 실제 버튼 위치. 현재 닫히지 않음 -->
+                <div class="modal-footer">
+                    <botton class="btn btn-secondary" data-bs-dismiss="modal">Close</botton>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.js"></script>
+
+</html>
